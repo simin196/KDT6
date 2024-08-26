@@ -12,12 +12,13 @@ if 0 <= A <= 23 and 0 <= B <= 59:
             B1 = (B+C2) - 60
             A1 = A + C1 + 1
 
-            if A1 >= 24:
-                A1 = A1-24
-
-                print(f'{A1} {B1}')
-            else:
-                print(f'{A1} {B1}')
+            while True:
+                
+                if A1 >= 24:
+                    A1 = A1-24
+                else:
+                    print(f'{A1} {B1}')
+                    break
         else:
             print(f'{A1} {B1}')
     
