@@ -6,24 +6,23 @@
 '''
 # set이용하는 방법도있지 않을까?
 
-a,b,c = map(int,(input().strip().split(' ')))
+a,b,c = list(map(int,(input().strip().split(' '))))
 
-if 1<=a<=6 and 1<=b<=6 and 1<=c<=6:
-    if a==b and a==c and c==b: 
-        print(10000+(1000*a))
-    
-    elif (a==b and a==b) or (b==a and b==c) or (c==a and c==b):
-        if a==b and a==b:
-            print(1000+(100*a))
-        elif b==a and b==c:
-            print(1000+(100*b))
-        else: 
-            print(1000+(100*c))
+if a==b and a==c and c==b: 
+    print(10000+(1000*a))
 
-    else:
-        point =  0
-        p = [a,b,c]
-        for i in p:
-            if i > point:
-                point = i
-        print((100*point))  
+elif (a==b or a==c) or (b==a or b==c) or (c==a or c==b):
+    if a==b or a==c:
+        print(1000+(100*a))
+    elif b==a or b==c:
+        print(1000+(100*b))
+    else: 
+        print(1000+(100*c))
+
+else:
+    point =  0
+    p = [a,b,c]
+    for i in p:
+        if i > point:
+            point = i
+    print((100*point))  
