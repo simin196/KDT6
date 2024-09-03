@@ -10,7 +10,8 @@
 
 '''
 
-### OvO(One vs One)분류
+
+### OvO(One vs One)분류 n*(n-1)/2
 
 '''
 [0,1,2,3,4] 5개 분류 => 5*(5-1)/2 = 10개의 2진분류기
@@ -25,18 +26,17 @@
 [0,1,2,3,4,5,6,7,8,9] 10개 분류 => 10*(10-1)/2 = 45개의 2진분류기
 
 0 =>         0 vs 1  0 vs 2  0 vs 3  0 vs 4  0 vs 5  0 vs 6  0 vs 7  0 vs 8  0 vs 9
-1 =>                 1 vs 2  1 vs 3  1 vs 4  0 vs 5  0 vs 6  0 vs 7  0 vs 8  0 vs 9
-2 =>                         2 vs 3  2 vs 4  0 vs 5  0 vs 6  0 vs 7  0 vs 8  0 vs 9
-3 =>                                 3 vs 4  0 vs 5  0 vs 6  0 vs 7  0 vs 8  0 vs 9
-4 =>                                         0 vs 5  0 vs 6  0 vs 7  0 vs 8  0 vs 9
-5 =>                                                 0 vs 6  0 vs 7  0 vs 8  0 vs 9
-6 =>                                                         0 vs 7  0 vs 8  0 vs 9
-7 =>                                                                 0 vs 8  0 vs 9
-8 =>                                                                         0 vs 9
+1 =>                 1 vs 2  1 vs 3  1 vs 4  1 vs 5  1 vs 6  1 vs 7  1 vs 8  1 vs 9
+2 =>                         2 vs 3  2 vs 4  2 vs 5  2 vs 6  2 vs 7  2 vs 8  2 vs 9
+3 =>                                 3 vs 4  3 vs 5  3 vs 6  3 vs 7  3 vs 8  3 vs 9
+4 =>                                         4 vs 5  4 vs 6  4 vs 7  4 vs 8  4 vs 9
+5 =>                                                 5 vs 6  5 vs 7  5 vs 8  5 vs 9
+6 =>                                                         6 vs 7  6 vs 8  6 vs 9
+7 =>                                                                 7 vs 8  7 vs 9
+8 =>                                                                         8 vs 9
 9 =>                                 
 
 제일 확률이 높은 클래스가 나온다
-
 '''
 
 
