@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & TAG</title>
+    <!--내부 CSS-->
+    <style>
+        * {text-align: center;}
+
+        #header, header{
+            background-color: rgba(208, 94, 94, 0.51);
+            height: 20vh;}
+
+        #menu, nav {background-color: rgb(38, 108, 170);
+            width: 25%;
+            float: left;
+            height: 70vh;
+            }
+
+        #center, section {background-color: rgb(49, 174, 153);
+            display: inline-block;
+            width: 60%;
+            height: 70vh;
+            }
+
+        #side, aside {background-color: rgb(201, 177, 128);
+            width: 25%;
+            float: right;
+            height: 70vh;
+            }
+
+        #footer, footer{background-color: rgb(249, 249, 49);
+            height: 10vh;
+            clear: both;
+            }    
+    </style>
+    <!--아이디명, 태그명 으로 해준것
+    html의 부모는 viewprot
+    vw, vh같은 퍼센트  -->
+</head>
+
+<body>
+    <!-- <div id="header">HEADER</div>
+    <div id="menu">MENU</div>
+    <div id="center">CENTER</div>
+    <div id="side">SIDE</div>
+    <div id="footer">FOOTER</div> -->
+    <header>HEADER
+        <h1>MY PROJECT DEMO</h1>
+    </header>
+    <nav>MENU
+        <ul>
+            <li><a href="#ml">머신러닝</a></li>
+            <li><a href="#dl">딥러닝</a></li>
+            <li><a href="#cv">비젼딥러닝</a></li>
+            <li><a href="#npl">자연어딥러닝</a></li>
+        </ul>
+    </nav>
+
+    <section>CANTER
+        <div id="'ml">
+            머신러닝
+        </div>
+
+        
+        <div id="'dl">
+            딥러닝
+        </div>
+        
+        <div id="'cv">
+            비젼딥러닝
+        </div>
+        
+        <div id="'npl">
+            자연어딥러닝
+        </div>
+
+    </section>
+
+    <aside>SIDE</aside>
+    <footer>FOOTER</footer>
+</body>
+</html>
+
+<!--float하는것도 방법이지만 display:inline-block을 사용하면 크기조절가능하다-->

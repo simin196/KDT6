@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 태그</title>
+</head>
+<body>
+    <h3>textarea 태그 사용법</h3>
+    <hr>
+
+    <form>
+    <fieldset>
+        <legend>블로그 글쓰기</legend>
+        <p>
+        <label > 제목 </label>
+        <input type="text" minlength="3" maxlength="10" name="text" placeholder="가을비" autofocus="True">
+    </p>
+
+        <p> 
+        <label > 내용 </label>
+        <textarea name="message" placeholder="내용을 입력하세요" rows="10" cols="50"></textarea>
+    </p>
+    </fieldset>
+    <input type="submit" value="저장">
+</form>
+</body>
+</html>
+<!-- 추가적으로 입력된 내용이 없다면 입력된 내용이없습니다 라고 팝업 띄울수있는데 그건 자바스크립트에서-->

@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(221, 185, 240);
+    font-family: serif;
+    color: black;}
+
+h1{
+    border-bottom: 1px solid gray;
+    color: red;}
+
+em{
+    color: rgb(255, 55, 0);
+    font-weight: 1000;
+    font-weight: bold
+}
+
+tr{ text-align : center;}
+
+p.first{color: rgb(0, 0, 0);}
+p.second{color: blue;}

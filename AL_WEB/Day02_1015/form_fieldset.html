@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 태그</title>
+</head>
+<body>
+    <h2>Form 태그와 다양한 입력 Input태그</h2>
+    <!--Label태그 radio태그-->
+    <form>
+        <label> 성별: </label>
+        <!--묵시적 방법-->
+        <label>
+            <input type="radio" name="gender" value="m"> 남자 </label>
+
+        <!--명시적 방법-->
+        <input id="f" type="radio" name="gender" value="f"> <label for="f">여자</label>
+
+        <!--
+        file:///C:/Users/KDP-23/Desktop/KDT6/AL_WEB/Day02_1015/form01.html?gender=m
+        file:///C:/Users/KDP-23/Desktop/KDT6/AL_WEB/Day02_1015/form01.html?gender=f
+        으로 전달
+        -->
+        <!-- 서버전송 기능 submit태그-->
+        <input type="submit" value="전송">
+    </form>
+
+    <h3> fieldset와 legend 태그로 그룹화 </h3>
+    <form>
+        <fieldset>
+            <label> 성별: </label>
+            <label>
+                <input type="radio" name="gender" value="m" checked="True"> 남자 
+            </label>
+            <label>
+                <input type="radio" name="gender" value="f"> 여자 
+            </label>   
+        </fieldset>
+
+         <!-- 서버전송 기능 submit태그-->
+         <input type="submit" value="전송">
+    </form>
+</body>
+</html>

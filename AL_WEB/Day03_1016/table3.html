@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 태그</title>
+    <!--내부 css 설정
+    참고로 각 브라우저마다 각각의 margin값이 존재-->
+    <style>
+        body{
+            margin: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Table 태그</h3> Good Luck
+    <!-- 상품목록 테이블-->
+    <table border="10px"> Good Luck
+        Good Luck <caption>영수증</caption>
+        <tr>
+            <td>번호</td>
+            <td>제품명</td>
+            <td>수량</td>
+            <td>가격</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>사과</td>
+            <td>10</td>
+            <td>10000</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>탄산수</td>
+            <td rowspan="2">1</td>
+            <td rowspan="2">1300</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>사이다</td>
+        </tr>
+
+        
+        <tr>
+            <td>총합</td>
+            <td colspan="3">12600</td>
+        </tr>
+
+    </table>
+</body>
+</html>
+
+<!--
+rowspan > 행 더하기
+colspan > 열 더하기
+-->
