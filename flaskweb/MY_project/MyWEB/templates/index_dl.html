@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DL</title>
+    <!--외부 CSS파일 설정-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/main.css') }}">
+                                                      <!-- 폴더명 , filename = 파일명-->
+</head>
+<body>
+    <h1>딥러닝</h1>
+    
+    <img src="{{url_for('static', filename = 'images/tardis.jpg')}}" > <br>
+
+    <ul>
+        <li> <a href="/index">Home</a></li>
+    </ul>
+</body>
+</html>
