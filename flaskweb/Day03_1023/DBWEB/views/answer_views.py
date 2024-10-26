@@ -13,4 +13,4 @@ def create(question_id):
     answer = Answer(content=content, create_date = datetime.now())
     question.answer_set.append(answer)
     DB.session.commit()
-    return redirect(url_for('question.detail', question_id = question_id))
+    return redirect(url_for('question.detail', question_id = question_id))                  
